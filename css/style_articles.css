@@ -1,0 +1,82 @@
+
+@font-face {
+    font-family: "DejaVu Sans";
+    src: url(../fonts/DejavuSans.ttf);
+}
+
+/*html, body {
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+    background-color: #1d1c1c;
+}
+
+.wrapper {
+    margin-top:-62px;
+    min-height:100%;
+}*/
+.content {
+    padding-top:100px;
+    margin-right: 15%;
+    margin-left: 15%;
+    background-color: #191919;
+}
+
+.content h1 {
+    color: #d8bc7b;
+    text-align: center;
+    font-family: "DejaVu Sans";
+}
+
+.content p {
+    text-indent: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: #ffffff;
+    font-size: 1.3em;
+    font-family: "DejaVu Sans";
+}
+
+.content h2 {
+    margin-left: 40px;
+    margin-right: 20px;
+    color: #d8bc7b;
+    font-family: "DejaVu Sans";
+}
+
+.content img {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+}
+
+.content img:hover {
+    border: 3px solid #191919;
+}
+
+/*
+.footer {
+    background-color: #ffffff;
+    height:45px;
+    clear:both
+}
+
+.footer img {
+    margin-top: 3px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.footer span {
+    margin-left: 10px;
+}
+
+.right {
+    float:right;
+}
+
+.left {
+    float: left;
+    margin-top: 0.7%;
+}
+*/

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style_main.css">
+	<title>Головна</title>
+	<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="shortcut icon" type= "image/x-icon" href="img/icon.png">
+</head>
+<body>
+<script type="text/javascript" src="js/functions_main.js"></script>
+	<div class ="dws-menu" >
+	<ul class ="dws-ul">
+	<li class ="dws-li"><a href="index.html">Головна</a></li>
+    <li class ="dws-li"><a href="galery.html">Галерея</a></li>
+    <li class ="dws-li"><a href="posibilities.html">Можливості</a></li>
+    <li class ="dws-li"><a href="motivation.html">Мотивація</a></li>
+    <li class ="dws-li"><a href="music.html">Музика</a></li>
+  </ul>
+</div>
+	<div id="page-wrap"> </div>
+	<div class= "content">
+		<div class = "container" id="login" style="display: none;">
+			<img src="img/men.jpg" >
+			<form>
+				<div class="dws-input">
+					<input type="text"  name="username" placeholder="Введіть логін">
+				</div>
+				<div class="dws-input">
+					<input type="password" name="password" placeholder="Введіть пароль">
+				</div>
+				<input class="dws-submit" type="submit" name="submit" value="УВІЙТИ"><br />
+				<a href="#">Відновити пароль</a>
+			</form>
+			<div class="dws-social">
+				<i class="fa fa-vk" aria-hidden="true"></i>
+				<i class="fa fa-twitter" aria-hidden="true"></i>
+				<i class="fa fa-facebook" aria-hidden="true"></i>
+				<i class="fa fa-google-plus-official" aria-hidden="true"></i>
+				<i class="fa fa-odnoklassniki" aria-hidden="true"></i>
+			</div>
+		</div>
+
+		<div class = "container" id="registration" style="display: none;">
+			<img src="img/men.jpg" >
+			<form>
+				<div class="dws-input">
+					<input type="text"  id="username" name="username"  placeholder="Введіть логін">
+					<input type="text" id="e-mail" name="e-mail" placeholder="Введіть e-mail">
+					<input type="text" id="name" name="name" placeholder="Введіть ім'я">
+					<input type="text" id="data-birth" name="data-birth" placeholder="Введіть дату народження">
+				</div>
+				<div class="dws-input">
+					<input type="password"  id="password"  name="password" placeholder="Введіть пароль">
+				</div>
+				<div id="messageShow"></div>
+				<input class="dws-submit" id = "done" type="submit" name="submit" value="ЗАРЕЄСТРУВАТИСЯ"><br />
+			</form>
+		</div>
+		<div id="buttons">
+		<button id="buttonOne" onclick="$('#registration').toggle(); $('#buttons').toggle();"  style="display: inline-block;"> Реєстрація</button>
+		<button id="buttonTwo" onclick="$('#login').toggle(); $('#buttons').toggle();" style="display: inline-block;">Вхід</button>
+		</div>
+		<img src="img/main_background7.png">
+		</div>
+	<div class="footer">
+		<span class="left"> Всі права захищені &copy; 2019 </span>
+		<span class="right"> <img src="img/social/facebook.png" alt="Facebook" title="Facebook" ></span>
+		<span class="right"> <img src="img/social/skype.png" alt="Gmail" title="Skype" ></span>
+		<span class="right"> <img src="img/social/instagram.png" alt="Instagram" title="Instagram" ></span>
+		<span class="right"> <img src="img/social/youtube.png" alt="Youtube" title="Youtube" ></span>
+	</div>
+</body>
+</html>

@@ -1,0 +1,220 @@
+
+@font-face {
+    font-family: "DejaVu Sans";
+    src: url(../fonts/DejavuSans.ttf);
+}
+
+@font-face {
+    font-family: "FontAwesome";
+    src: url(../fonts/FontAwesome.otf);
+}
+
+body {
+	/*background-image: url(../img/main_background5.png);*/
+    background-color: #191919;
+	background-size: 100%;
+    height: 1000px;
+	/*overflow: scroll;
+    width: auto; 
+    height: 5000px;
+    padding: 5px; 
+    border: solid 1px transparent;*/
+}
+
+.content {
+    padding-top:80px;
+    margin-right: 10%;
+    margin-left: 10%;
+    background-color: transparent;
+    /*background-color: rgba(97,94,94,0.4);*/
+    /*padding-bottom: 5%;*/
+    color:#fff;
+   /* margin-bottom:20px;*/
+    text-align:center;
+    opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+    transition: 1s; /*Скорость перехода состояния элемента*/
+
+    animation: show 2s 1; /* Указываем название анимации, её время и количество повторов*/
+    animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+    animation-delay: 1s; /* Задержка перед началом */
+    
+}
+
+.content img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*.content img:hover {
+    height: 120%;
+    width: 80%;
+}*/
+
+@keyframes show{
+    0%{
+        opacity:0;
+    }
+
+
+    100% {
+        opacity:1;
+    }
+}
+
+
+.content #buttons #buttonOne {
+    align-items: center;
+    position: relative;
+    display: inline-block;
+    background-color: transparent;
+    margin-right: 40%;
+    margin-left: 40%;
+    margin-top: 5%;
+    padding: 10px 30px;
+    border: 2px solid #f1c40f;
+    color: #f1c40f;
+    font-family: "DejaVu Sans";
+    font-size: 25px;
+    transition: .4s;
+}
+
+.content #buttons #buttonOne:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border: 2px solid rgba(0,0,0,0);
+    transition: .4s;
+}
+.content #buttons #buttonOne:hover:after {
+    border-color: #f1c40f;
+    width: calc(100% - 10px);
+    height: calc(100% + 10px);
+}
+
+
+.content #buttons #buttonTwo{
+    position: relative;
+    display: inline-block;
+    background-color: transparent;
+    margin-right: 60%;
+    margin-left: 44%;
+    margin-top: 5%;
+    padding: 10px 30px;
+    border: 2px solid #f1c40f;
+    font-family: "DejaVu Sans";
+    font-size: 25px;
+    color: #f1c40f;
+    transition: .4s;
+}
+
+.content #buttons #buttonTwo:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border: 2px solid rgba(0,0,0,0);
+    transition: .4s;
+}
+.content #buttons #buttonTwo:hover:after {
+    border-color: #f1c40f;
+    width: calc(100% - 10px);
+    height: calc(100% + 10px);
+}
+
+a{
+    color: #fff;
+}
+a:hover{
+    text-decoration: none;
+}
+
+.container{
+    width:450px;
+    background-color: rgba(97,94,94,0.4);
+    margin: 100px auto 0 auto;
+    text-align: center;
+    box-shadow: 0 -5px 0 #f1c40f;
+    padding-bottom: 20px;
+}
+.container img{
+    width:120px;
+    height:120px;
+    margin: -60px 0 30px 0;
+    border: 5px solid #c8a218;
+    border-radius: 50%;
+    box-shadow: 0 -5px 0 #f1c40f;
+}
+
+input[type="text"],input[type="password"]{
+    width: 300px;
+    height:50px;
+    font-size: 18px;
+    margin-bottom: 25px;
+    border-radius: 4px;
+    padding-left: 40px;
+}
+.dws-input input:hover{
+    box-shadow: 0 0 6px 3px rgba(97,94,94,1.7);
+}
+.dws-submit {
+    padding: 13px 30px;
+    margin: 5px 0 20px 0;
+    font-size: 15px;
+    color: #fff;
+    background-color: #f1c40f;
+    border: none;
+    border-bottom: 4px solid #f1c40f;
+    cursor: pointer;
+}
+.dws-submit:hover{
+    transition: all 0.5s;
+    background: #fff;
+    color: rgba(97,94,94,1.7);
+}
+
+.dws-input::before{
+    font-family: "FontAwesome";
+    content: "\f007";
+    position: absolute;
+    font-size: 30px;
+    padding: 10px 0 0 7px;
+    color: rgba(97,94,94,0.4);;
+}
+.dws-input:nth-child(2)::before{
+    content: "\f023";
+}
+.dws-input:hover::before{
+    color: #f1c40f;
+    transition: all 0.3s;
+}
+.dws-social i{
+    color: #fff;
+    font-size: 20px;
+    width: 20px;
+    padding: 10px;
+}
+.dws-social i:hover{
+    background-color: rgba(97,94,94,0.4);;
+    /*color: rgba(97,94,94,0.4);*/
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.content #registration form .dws-input #messageShow {
+    font-size:  1.2em;
+    float: left;
+    color: #9b0c3e;
+}

@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "DejaVu Sans";
+    src: url(../fonts/DejavuSans.ttf);
+}
+
+html, body {
+    margin:0;
+    padding:0;
+    height:100%;
+    /*width:100%;*/
+    background-color: #1d1c1c;
+}
+
+.dws-menu {
+    background-color: #4b4848;
+    margin-top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+ul.dws-ul {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+}
+
+li.dws-li{
+    list-style: none;
+    padding: 10px;
+}
+
+li.dws-li a{
+    text-decoration: none;
+    font-family: "DejaVu Sans";
+    font-size: 25px;
+    color: #f0f6f6;
+    margin-right: 40px;
+    margin-left: 40px;
+    letter-spacing: 3px;
+    position: relative;
+    padding : 5px;
+    /*відступ*/
+}
+
+li.dsw-li a i {
+    margin-right: 10px;
+}
+
+li.dws-li a::before {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #f1c40f;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: .5s;
+    mix-blend-mode: multiply;
+}
+
+li.dws-li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #9b0c3e;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    transition: .5s;
+    mix-blend-mode: multiply;
+}
+
+li.dws-li:hover {
+    background-color: #96a0a4;
+}
+
+li.dws-li:hover a::before {
+    width: 50%;
+    transform: translateX(100%);
+}
+
+li.dws-li:hover a::after {
+    width: 50%;
+    transform: translateX(-100%);
+}
+
+li.dws-li a:hover {
+    color: #9b0c3e;
+}
+
+.wrapper {
+    margin-top:-62px;
+    min-height:100%;
+}
+
+.footer {
+    background-color: #ffffff;
+    height:45px;
+    clear:both
+}
+
+.footer img {
+    margin-top: 3px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.footer span {
+    margin-left: 10px;
+}
+
+.right {
+    float:right;
+}
+
+.left {
+    float: left;
+    margin-top: 0.7%;
+}

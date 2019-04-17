@@ -1,0 +1,154 @@
+
+
+html,body{
+    width:100%;
+    height:100%;
+    padding:0;
+    margin:0;
+}
+
+.content {
+    padding-top:100px;
+    margin-right: 7%;
+    margin-left: 7%;
+    background-color: #191919;
+}
+
+/*.content {
+    top: 200px;
+    /*padding-top:100px;*/
+    /*margin-right: 7%;
+    margin-left: 7%;
+    background-color: #191919;
+    margin-bottom: 5%;
+}
+*/
+.wrp{
+    padding-top:100px;
+    background-color: #191919;
+    width: 700px;
+    margin:0 auto;
+    margin-top:0;
+    height:70%;
+    box-shadow:0 0 15px rgba(0,0,0,0.2);
+    border-radius:5px;
+}
+
+.player, .song{
+    position:relative;
+    width:680px;
+    height:50px;
+    padding:10px;
+    margin:0 0 20px 0;
+    background:#9b0c3e;
+    border-radius:5px 5px 0 0
+}
+
+.play-pause,.play-pause_song{
+    float:left;
+    background:#706f6a url(../img/music.png) no-repeat;
+    background-size:40px;
+    background-position: 6px 8px;
+    width:50px;
+    height:50px;
+    border-radius:50px;
+}
+
+.nameSong,.settings,.nameSong_song{
+    position:absolute;
+    color:#ecf0f1;
+    padding:5px;
+    top:0;
+    left:340px;
+    font-size:18px
+}
+
+.settings{
+    left:80px
+}
+
+.settings div{
+    float:left;
+    margin-right:5px
+}
+.mute, .volume{
+    font-size:20px;
+    margin:0 10px
+}
+
+.bar{
+    position:relative;
+    float:left;
+    background:rgba(0,0,0,0);
+    width:540px;
+    height:40px;
+    margin:10px;
+    padding:0;
+    overflow:hidden;
+}
+
+.setTime{
+    position:absolute;
+    top:0;
+    background:#615f59;
+    color:#ecf0f1;
+    font-size:12px;
+    padding:3px;
+    display:none
+}
+
+.range,.progress,.load{
+    height:10px;
+    margin:25px 0;
+    padding:0;
+    width:100%
+}
+
+.progress,.load{
+    position:absolute;
+    top:0;
+    left:-100%
+}
+.range{
+    background:rgb(97, 95, 89); /*rgba(226, 17, 91,0.5)*/
+}
+
+.progress{
+    background:#615f59;
+    z-index:3;
+}
+
+.load{
+    background:rgb(226, 17, 91)
+}
+
+.song{
+    height:25px;
+    background:rgb(97, 95, 89);
+    color:#ecf0f1;
+    float:left;
+    border-radius:0
+}
+.song:hover{
+    background:rgba(97, 95, 89,0.8)
+}
+
+.play-pause_song{
+    background:#706f6a url(../img/music.png) no-repeat;
+    background-size:20px;
+    background-position: 4px 4px;
+    width:25px;
+    height:25px
+}
+
+.nameSong_song,.duration_song{
+    font-size:14px
+}
+.nameSong_song{
+    top:10px;
+    left:80px
+}
+.duration_song{
+    float:right;
+    margin-top:5px
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Музика</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style_music.css">
+    <link rel="shortcut icon" type= "image/x-icon" href="img/icon.png">
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="js/playlist.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+</head>
+<div class ="dws-menu" >
+    <ul class ="dws-ul">
+        <li class ="dws-li"><a href="index.html">Головна</a></li>
+        <li class ="dws-li"><a href="galery.html">Галерея</a></li>
+        <li class ="dws-li"><a href="posibilities.html">Можливості</a></li>
+        <li class ="dws-li"><a href="motivation.html">Мотивація</a></li>
+        <li class ="dws-li"><a href="music.html">Музика</a></li>
+    </ul>
+</div>
+<div id="page-wrap"> </div>
+<div class="wrp">
+    <div class="player">
+        <div class="play-pause" id="-1"></div>
+        <div class="nameSong">Название песни</div>
+        <div class="settings">
+            <div class="sledbtn" id="prev" data-id="-1">◄</div> <!--Кнопка предыдущая песня-->
+            <div class="sledbtn" id="next" data-id="-1">►</div><!--Кнопка следующая песня-->
+            <div class="mute">  ♪  </div><!--Кнопка выключения/включения звука-->
+            <input type="range" class="volume" min=0 max=100 value=100><!--Регулятор громкости-->
+        </div>
+        <div class="bar">
+            <div class="setTime"></div>
+            <div class="range">
+                <div class="progress"></div>
+                <div class="load"></div>
+        </div>
+        <div class="time">0:00</div>
+    </div>
+</div>
+    </div>
+<div class="footer">
+    <span class="left"> Всі права захищені &copy; 2019 </span>
+    <span class="right"> <img src="img/social/facebook.png" alt="Facebook" title="Facebook" ></span>
+    <span class="right"> <img src="img/social/skype.png" alt="Gmail" title="Skype" ></span>
+    <span class="right"> <img src="img/social/instagram.png" alt="Instagram" title="Instagram" ></span>
+    <span class="right"> <img src="img/social/youtube.png" alt="Youtube" title="Youtube" ></span>
+</div>
+</body>
+</html>
